@@ -1,2 +1,1 @@
-# Kiểm thử phần mềm GitHub
-
+# Môn kiểm thử phần mềm (GitHub)
