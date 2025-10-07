@@ -19,15 +19,6 @@ public class ThreeCardGame {
         return sum % 10 == 0 ? 10 : sum % 10;
     }
 
-    // So sánh 2 lá theo luật chất và giá trị
-    private static int compareCard(Card c1, Card c2) {
-        String suitOrder = "HDCS"; // Cơ > Rô > Tép > Bích
-        if (c1.getSuit() == c2.getSuit()) {
-            return Integer.compare(c1.getValue(), c2.getValue());
-        }
-        return Integer.compare(suitOrder.indexOf(c1.getSuit()), suitOrder.indexOf(c2.getSuit()));
-    }
-
     // Tìm chất mạnh nhất trong 1 bộ
     private static char getStrongestSuit(List<Card> hand) {
         return hand.stream()
